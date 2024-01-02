@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="152" height="152" viewBox="0 0 152 152">
+  <g id="ic-menu" transform="translate(792 65)">
+    <g id="ic-menu-2" data-name="ic-menu" transform="translate(-770 -88.025)">
+      <g id="grip-solid-horizontal_1_" transform="translate(0 58.025)">
+        <path id="Path_2313" data-name="Path 2313" d="M101.253,361.654H6.75a6.75,6.75,0,1,1,0-13.5h94.5a6.75,6.75,0,1,1,0,13.5Z" transform="translate(0 -280.652)" fill="#58beb4"/>
+        <path id="Path_2314" data-name="Path 2314" d="M101.253,216.59H6.75a6.75,6.75,0,1,1,0-13.5h94.5a6.75,6.75,0,1,1,0,13.5Z" transform="translate(0 -169.339)" fill="#58beb4"/>
+        <path id="Path_2315" data-name="Path 2315" d="M101.253,71.525H6.75a6.75,6.75,0,1,1,0-13.5h94.5a6.75,6.75,0,1,1,0,13.5Z" transform="translate(0 -58.025)" fill="#58beb4"/>
+      </g>
+    </g>
+    <rect id="Rectangle_581" data-name="Rectangle 581" width="152" height="152" transform="translate(-792 -65)" fill="none"/>
+  </g>
+</svg>
