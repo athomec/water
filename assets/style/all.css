@@ -17474,9 +17474,6 @@ input[readonly] {
             display: none; } }
       .navbar-main .nav-item:nth-last-child(3)::after {
         display: none; }
-        @media (max-width: 991px) {
-          .navbar-main .nav-item:nth-last-child(3)::after {
-            display: block; } }
       .navbar-main .nav-item:last-child::after {
         display: none; }
       .navbar-main .nav-item:last-child .nav-link {
