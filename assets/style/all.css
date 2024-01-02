@@ -17421,6 +17421,9 @@ input[readonly] {
         -ms-flex-align: center;
             align-items: center;
     letter-spacing: 3px; }
+    @media (max-width: 485px) {
+      .navbar-brand {
+        letter-spacing: 0; } }
     .navbar-brand h1, .navbar-brand .h1 {
       font-size: 1.25rem; }
       @media (max-width: 576px) {
