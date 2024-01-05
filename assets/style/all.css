@@ -18003,7 +18003,10 @@ input[readonly] {
 
 /*--------------------首頁開始------------------*/
 .section {
-  padding: 72px 0; }
+  padding: 72px 0 64px 0; }
+  @media (max-width: 768px) {
+    .section {
+      padding: 48px 0 40px 0; } }
 
 .main-list-btn {
   display: -webkit-box;
@@ -18013,9 +18016,6 @@ input[readonly] {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -18025,20 +18025,27 @@ input[readonly] {
   -webkit-box-shadow: 0 5px 7px #dee2e6;
           box-shadow: 0 5px 7px #dee2e6;
   width: 100%;
-  height: 220px;
+  height: 100%;
+  min-height: 250px;
   color: #000;
-  padding: 32px;
-  min-height: 250px; }
+  padding: 32px 24px; }
+  @media (max-width: 1200px) {
+    .main-list-btn {
+      min-height: 200px; } }
   @media (max-width: 991px) {
     .main-list-btn {
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
           -ms-flex-direction: row;
               flex-direction: row;
-      height: 100px !important; } }
+      min-height: auto;
+      padding: 16px 32px; } }
   @media (max-width: 768px) {
     .main-list-btn {
       font-size: 1rem; } }
+  @media (max-width: 576px) {
+    .main-list-btn {
+      padding: 16px; } }
   .main-list-btn:hover {
     -webkit-box-shadow: none;
             box-shadow: none; }
@@ -18047,13 +18054,13 @@ input[readonly] {
     margin-bottom: 16px; }
     @media (max-width: 991px) {
       .main-list-btn img {
-        width: 52px; } }
+        width: 100px;
+        margin-bottom: 0;
+        margin-right: 24px; } }
     @media (max-width: 768px) {
       .main-list-btn img {
-        max-width: 25%; } }
-    @media (max-width: 523px) {
-      .main-list-btn img {
-        max-width: 40%; } }
+        width: 80px;
+        margin-right: 16px; } }
 
 .main-list-title {
   font-size: 1.25rem;
@@ -18061,18 +18068,52 @@ input[readonly] {
   @media (max-width: 991px) {
     .main-list-title {
       font-size: 1.25rem;
-      margin-bottom: 0;
-      width: 195px; } }
+      margin-bottom: 4px; } }
   @media (max-width: 768px) {
     .main-list-title {
-      font-size: 1rem;
-      width: 165px; } }
+      font-size: 1rem; } }
+
+.main-list-con {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%; }
+  @media (max-width: 991px) {
+    .main-list-con {
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start;
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start; } }
+  @media (max-width: 768px) {
+    .main-list-con p {
+      font-size: 0.8rem; } }
 
 /*--------------------圖表開始------------------*/
 .chart {
   width: 100%;
   height: 340px;
-  margin-top: -35px; }
+  margin-top: -33px; }
+  @media (max-width: 1400px) {
+    .chart {
+      margin-top: -50px; } }
+  @media (max-width: 991px) {
+    .chart {
+      margin-top: 0; } }
+  @media (max-width: 576px) {
+    .chart {
+      height: 400px; } }
+  @media (max-width: 485px) {
+    .chart {
+      height: 480px; } }
   .chart-header {
     height: 54px;
     position: relative;
@@ -18141,7 +18182,7 @@ input[readonly] {
   max-width: 1286px;
   margin: 0 auto;
   padding: 0 80px; }
-  @media (max-width: 1430px) {
+  @media (max-width: 1400px) {
     .theme-card {
       width: 100%;
       padding: 0 72px; } }
@@ -18519,6 +18560,15 @@ input[readonly] {
     .icon-list-item img {
       width: 20px;
       margin-right: 8px; }
+
+.text-word-list-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.text-word-list span {
+  -ms-flex-negative: 0;
+      flex-shrink: 0; }
 
 /*-----------------表格樣式---------------------*/
 .table-rwd {
@@ -19269,7 +19319,7 @@ input[readonly] {
   max-width: 1286px;
   margin: 0 auto;
   padding: 0 68px; }
-  @media (max-width: 1430px) {
+  @media (max-width: 1400px) {
     .slide-list {
       max-width: 100%;
       width: 100%;
@@ -20018,22 +20068,39 @@ a.file-list-item {
           width: 8px;
           height: 8px; } }
 
-.sitemap {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
-  .sitemap-title {
-    display: block;
-    font-size: 1.1rem;
-    color: #58BEB4;
-    font-weight: 600;
-    margin-bottom: 12px; }
-    @media (max-width: 576px) {
-      .sitemap-title {
-        font-size: 1rem;
-        margin-bottom: 8px; } }
+.sitemap-list-item {
+  display: block;
+  font-size: 1.1rem;
+  color: #58BEB4;
+  font-weight: 600; }
+  @media (max-width: 576px) {
+    .sitemap-list-item {
+      font-size: 1rem;
+      margin-bottom: 8px; } }
+
+.sitemap-list-title {
+  background: #E9F9FE;
+  color: #2B7570;
+  text-align: center;
+  padding: 8px 0;
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0; }
+  @media (max-width: 768px) {
+    .sitemap-list-title {
+      font-size: 1rem; } }
+
+.sitemap-list-link {
+  display: block;
+  color: #000;
+  padding: 12px 0 0 12px;
+  font-size: 1rem;
+  font-weight: 500; }
+  @media (max-width: 576px) {
+    .sitemap-list-link {
+      font-size: 0.9rem; } }
+  .sitemap-list-link:hover {
+    color: #2F9B90; }
 
 @media (max-width: 523px) {
   .fs-mobile-h7 {
