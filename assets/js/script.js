@@ -26,12 +26,14 @@ $(function () {//JS開頭
 		$(".js-verify").removeClass("d-none");
 		$(".js-verify-con").addClass("d-none");
 		$(".js-otp-con").removeClass("d-none");
+		return false;
 	})
 	$(".js-verify").click(function () {
 		$(this).addClass("d-none");
 		$(".js-otp").removeClass("d-none");
 		$(".js-otp-con").addClass("d-none");
 		$(".js-verify-con").removeClass("d-none");
+		return false;
 	})
 	//banner滑鼠滑動
 	$('.carousel-inner').on('mousedown', function (e) {
