@@ -121,7 +121,7 @@
                                     placeholder="請輸入密碼" data-con="password">
                                 <a href="#" class="login-link link-primary-xdark ms-auto mb-2">
                                     <img src="./assets/images/ic-help.svg" alt="icon" class="me-1">忘記密碼</a>
-                                <div class="login-verify mb-2">
+                                <div class="login-verify mb-2 js-verify-con">
                                     <label for="verification" class="form-label secondary-color flex-shrink-0 mb-1">
                                         驗證碼<span>－CAPTCHA</span>
                                     </label>
@@ -145,10 +145,20 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="login-verify mb-2 d-none js-otp-con">
+                                    <label for="OTP" class="form-label secondary-color flex-shrink-0 mb-1">
+                                        驗證碼<span>－CAPTCHA</span>
+                                    </label>
+                                    <input type="text" class="form-control form-control-lg me-3 mb-1 mb-2 mb-md-0" id="OTP" placeholder="請輸入OTP驗證碼"
+                                        data-con="pin">
+                                </div>
 
-                                <a href="#" class="login-link link-bright-dark mb-4"><img
-                                        src="./assets/images/ic-arrow-right-blue.svg" alt="icon"
-                                        class="me-2">使用OTP驗證</a>
+                                <a href="#" class="login-link link-bright-dark mb-4 d-none js-otp">
+                                    <img src="./assets/images/ic-arrow-right-blue.svg" alt="icon" class="me-2">使用OTP驗證
+                                </a>
+                                <a href="#" class="login-link link-bright-dark mb-4 js-verify">
+                                    <img src="./assets/images/ic-arrow-right-blue.svg" alt="icon" class="me-2">使用圖像驗證
+                                </a>
                                 <div class="d-grid">
                                     <button type="button" class="login-btn btn btn-primary rounded-pill text-white"
                                         data-bs-dismiss="modal">登入</button>
