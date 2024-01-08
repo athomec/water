@@ -17,7 +17,6 @@
     <link rel="stylesheet" href="assets/style/all.css">
     <!--css設定-->
 </head>
-
 	<body>
 		<noscript>
 			<div class="container">
@@ -50,7 +49,7 @@
                     <a class="btn btn-sm btn-secondary text-white" href="signup.html" title="註冊">註冊</a>
                 </li>
                 <li class="nav-item">
-                    <a class="btn btn-sm btn-primary text-white" href="login.html" title="登入">登入</a>
+                    <a class="btn btn-sm btn-primary text-white" href="#login" title="登入" data-bs-toggle="modal">登入</a>
                 </li>
             </ul>
             <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
@@ -100,7 +99,69 @@
 <!--主選單結束-->
 				<a href="#Accesskey_C" class="key position-absolute" id="Accesskey_C" accesskey="C"
 					title="網頁主要內容資料區">:::</a>					
-				<!--內容區塊開始-->
+				<!-- 登入視窗開始 -->
+<div class="modal modal-lg fade" id="login" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content overflow-hidden">
+            <div class="modal-body p-0">
+                <div class="login">
+                    <button type="button" class="login-close btn-close" data-bs-dismiss="modal"></button>
+                    <div class="login-vision bg-gradient-color">
+                        <img src="./assets/images/login-vision.svg" alt="新竹縣政府農業處">
+                    </div>
+                    <div class="login-form">
+                        <form autocomplete="off" class="w-100">
+                            <div class="d-flex flex-column">
+                                <h1 class="login-title mb-2">登入</h1>
+                                <label class="form-label" for="account">帳號<span>－ACCOUNT</span></label>
+                                <input type="text" class="form-control form-control-lg mb-3 mb-md-4" id="account"
+                                    placeholder="請輸入帳號" data-con="account">
+                                <label class="form-label" for="password">密碼<span>－PASSWORD</span></label>
+                                <input type="text" class="form-control form-control-lg mb-2" id="password"
+                                    placeholder="請輸入密碼" data-con="password">
+                                <a href="#" class="login-link link-primary-xdark ms-auto mb-2">
+                                    <img src="./assets/images/ic-help.svg" alt="icon" class="me-1">忘記密碼</a>
+                                <div class="login-verify mb-2">
+                                    <label for="verification" class="form-label secondary-color flex-shrink-0 mb-1">
+                                        驗證碼<span>－CAPTCHA</span>
+                                    </label>
+                                    <div class="d-flex align-items-stretch flex-column flex-md-row">
+                                        <input type="text" class="form-control form-control-lg me-3 mb-1 mb-2 mb-md-0"
+                                            id="verification" placeholder="請輸入驗證碼" data-con="pin">
+                                        <div class="login-verify-img d-flex flex-shrink-0 ms-auto">
+                                            <img src="./assets/images/demo-code.png" alt="驗證碼" style="height: 42px;">
+                                            <ul class="login-function ms-2 flex-shrink-0">
+                                                <li class="login-function-item mb-1">
+                                                    <a href="#" title="重整" class="login-function-link link-img">
+                                                        <img src="./assets/images/ic-reset.svg" alt="重整icon">
+                                                    </a>
+                                                </li>
+                                                <li class="login-function-item">
+                                                    <a href="#" title="語音" class="login-function-link link-img">
+                                                        <img src="./assets/images/ic-voice.svg" alt="語音icon">
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <a href="#" class="login-link link-bright-dark mb-4"><img
+                                        src="./assets/images/ic-arrow-right-blue.svg" alt="icon"
+                                        class="me-2">使用OTP驗證</a>
+                                <div class="d-grid">
+                                    <button type="button" class="login-btn btn btn-primary rounded-pill text-white"
+                                        data-bs-dismiss="modal">登入</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--內容區塊開始-->
 <main class="main bg-white">
     <!--banner 開始-->
     <div id="carouselExampleCaptions" class="carousel slide">
@@ -131,19 +192,28 @@
                 <li class="col-lg-4">
                     <a href="#" class="main-list-btn">
                         <img src="./assets/images/ic-apply.svg" alt="申請icon">
-                        <div class="main-list-con"><h2 class="main-list-title">申請</h2><p>介紹文字介紹文字介紹文字</p></div>
+                        <div class="main-list-con">
+                            <h2 class="main-list-title">申請</h2>
+                            <p>介紹文字介紹文字介紹文字</p>
+                        </div>
                     </a>
                 </li>
                 <li class="col-lg-4">
                     <a href="#" class="main-list-btn">
                         <img src="./assets/images/ic-case-search.svg" alt="案件查詢icon">
-                        <div class="main-list-con"><h2 class="main-list-title">案件查詢</h2><p>介紹文字介紹文字介紹文字</p></div>
+                        <div class="main-list-con">
+                            <h2 class="main-list-title">案件查詢</h2>
+                            <p>介紹文字介紹文字介紹文字</p>
+                        </div>
                     </a>
                 </li>
                 <li class="col-lg-4">
                     <a href="#" class="main-list-btn">
                         <img src="./assets/images/ic-plan-info.svg" alt="水土保持計畫公開資訊icon">
-                        <div class="main-list-con"><h2 class="main-list-title">水土保持計畫公開資訊</h2><p>介紹文字介紹文字介紹文字</p></div>
+                        <div class="main-list-con">
+                            <h2 class="main-list-title">水土保持計畫公開資訊</h2>
+                            <p>介紹文字介紹文字介紹文字</p>
+                        </div>
                     </a>
                 </li>
             </ul>
@@ -166,7 +236,10 @@
                         </select>
                         <label for="case-count" class="col-form-label me-3 flex-shrink-0">案件統計</label>
                     </div>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115865.24378379867!2d120.93159574586183!3d24.83689291610871!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346839f903bde79f%3A0x8c92a4996297f15e!2zMzA15paw56u557ij5paw5Z-U6Y6u!5e0!3m2!1szh-TW!2stw!4v1704265916000!5m2!1szh-TW!2stw" width="100%" height="230" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115865.24378379867!2d120.93159574586183!3d24.83689291610871!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346839f903bde79f%3A0x8c92a4996297f15e!2zMzA15paw56u557ij5paw5Z-U6Y6u!5e0!3m2!1szh-TW!2stw!4v1704265916000!5m2!1szh-TW!2stw"
+                        width="100%" height="230" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
                 <div class="col-xxl-9">
                     <div class="chart-header bg-tertiary-xlight ps-4 mb-3 mb-xxl-0">
@@ -191,8 +264,8 @@
     var option;
 
     option = {
-        color: ['#C9DB6B','#58BEB4','#74C1EE'],
-        grid: {x:0,x2:0},//圖表內距
+        color: ['#C9DB6B', '#58BEB4', '#74C1EE'],
+        grid: { x: 0, x2: 0 },//圖表內距
         tooltip: {
             trigger: 'axis',
             axisPointer: {
@@ -212,8 +285,8 @@
         },
         legend: {//圖例
             data: ['110年審查案件數量', '111年審查案件數量', '110年水土保持服務團諮詢及輔導次數'],
-            x:'right',
-            padding: [0,35,0,0],
+            x: 'right',
+            padding: [0, 35, 0, 0],
             itemGap: 15
         },
         xAxis: [

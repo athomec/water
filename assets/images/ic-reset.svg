@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <g id="ic-reset" transform="translate(-883 -349)">
+    <rect id="ic-reset-2" data-name="ic-reset" width="20" height="20" rx="5" transform="translate(883 349)" fill="#58beb4"/>
+    <g id="loop_black_24dp" transform="translate(884.837 350.837)">
+      <path id="Path_93" data-name="Path 93" d="M0,0H16.529V16.529H0Z" fill="none"/>
+      <path id="Path_94" data-name="Path 94" d="M10.011,3.254V1L7.005,4.005l3.005,3.005V4.757a4.511,4.511,0,0,1,4.508,4.508,4.411,4.411,0,0,1-.526,2.1l1.1,1.1a6,6,0,0,0-5.079-9.211Zm0,10.518A4.511,4.511,0,0,1,5.5,9.264a4.411,4.411,0,0,1,.526-2.1l-1.1-1.1a6,6,0,0,0,5.079,9.211v2.254l3.005-3.005-3.005-3.005Z" transform="translate(-1.746 -1)" fill="#fff"/>
+    </g>
+  </g>
+</svg>
