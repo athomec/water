@@ -17748,9 +17748,6 @@ input[readonly] {
   .login-btn {
     height: 50px;
     font-size: 1.25rem; }
-    @media (max-width: 1400px) {
-      .login-btn {
-        height: auto; } }
     @media (max-width: 485px) {
       .login-btn {
         font-size: 1rem; } }
