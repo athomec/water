@@ -18965,6 +18965,11 @@ input[readonly] {
     @media (max-width: 1200px) {
       .table-rwd tr:last-child {
         margin-bottom: 0; } }
+    .table-rwd tr.hide td:first-child::after {
+      content: "+";
+      font-size: 1.25rem;
+      line-height: 1;
+      margin-top: 0; }
   @media (max-width: 1200px) {
     .table-rwd thead {
       display: none; } }
@@ -18990,10 +18995,11 @@ input[readonly] {
         display: -ms-flexbox;
         display: flex;
         text-align: left !important;
-        -webkit-box-align: start;
-            -ms-flex-align: start;
-                align-items: start;
-        padding: 8px 20px !important;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        padding: 0 20px !important;
+        height: 38px;
         position: relative;
         font-size: 0.9rem; }
         .table-rwd td[data-th=""]::before {
@@ -19002,11 +19008,26 @@ input[readonly] {
     .table-rwd td:first-child {
       text-align: center;
       font-weight: 400;
-      padding: 8px 20px !important; }
+      padding: 8px 20px !important;
+      pointer-events: none; }
       @media (max-width: 1200px) {
         .table-rwd td:first-child {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: justify;
+              -ms-flex-pack: justify;
+                  justify-content: space-between;
           background: #2B7570 !important;
-          color: #fff; }
+          color: #fff;
+          pointer-events: initial; }
+          .table-rwd td:first-child::after {
+            content: "-";
+            display: block;
+            margin-left: auto;
+            font-size: 1.75rem;
+            line-height: 0.5;
+            margin-top: -7px; }
           .table-rwd td:first-child:before {
             color: #fff;
             font-weight: 400; } }
@@ -19032,6 +19053,9 @@ input[readonly] {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center; }
+
+.table-toggle {
+  cursor: pointer; }
 
 /*-----------------卷軸樣式---------------------*/
 .scrollbar {

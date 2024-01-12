@@ -57,5 +57,46 @@ $(function () {//JS開頭
 		$(this).toggleClass("active");
 		$(".js-dropdown-menu").find("a").not(this).removeClass("active");
 	})
-	
+	//table展開
+	// 檢查視窗寬度
+	function checkWindowSize() {
+		if ($(window).width() > 1200) {
+			// 如果寬度大於 1200px，默認展開所有行
+			$(".table-toggle").each(function () {
+				let row = $(this).closest("tr");
+				let contentCell = row.find(".table-content");
+
+				// 展開該行
+				row.removeClass("hide");
+				contentCell.show();
+			});
+		}
+	}
+
+	// 初始化時檢查視窗大小
+	checkWindowSize();
+
+	// 在視窗大小改變時執行檢查
+	$(window).resize(function () {
+		checkWindowSize();
+	});
+
+	// 添加點擊事件處理程序
+	$(".table-toggle").on("click", function () {
+		let row = $(this).closest("tr");
+		let contentCell = row.find(".table-content");
+
+		// 判斷是否是小於或等於 1200px 的視窗
+		if ($(window).width() <= 1200) {
+			// 在小於或等於 1200px 時，動態切換該行的展開和收起狀態，使用 slideToggle 實現平滑效果
+			row.toggleClass("hide");
+			contentCell.slideToggle();
+		} else {
+			// 在大於 1200px 時，只切換該行的展開和收起狀態
+			row.toggleClass("hide");
+
+			// 根據行的狀態顯示或隱藏內容單元格
+			contentCell.toggle(!row.hasClass("hide"));
+		}
+	});
 })//JS尾端	
