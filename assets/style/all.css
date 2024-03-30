@@ -18729,7 +18729,7 @@ input[readonly] {
           -ms-transform: rotate(180deg);
               transform: rotate(180deg); }
   .side-menu.close {
-    position: absolute; }
+    position: fixed; }
     @media (max-width: 991px) {
       .side-menu.close {
         left: -280px; } }
@@ -21357,6 +21357,8 @@ input[readonly] {
 
 .main .table-main {
   border: 1px solid #A6E1F3; }
+  .main .table-main:before {
+    display: none; }
   @media (max-width: 1200px) {
     .main .table-main > tbody > tr {
       margin-bottom: 0; } }
