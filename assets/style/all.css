@@ -19412,20 +19412,41 @@ input[readonly] {
       font-size: 0.8rem; } }
 
 /*-----------------列表樣式---------------------*/
+.text-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  @media (max-width: 991px) {
+    .text-list {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; } }
+  .text-list-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 0.9rem;
+    font-weight: 500;
+    position: relative;
+    color: #343a40; }
+    .text-list-item img {
+      opacity: 0.8; }
+
 @media (max-width: 991px) {
-  .text-list {
+  .notice-list {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column; } }
 
-.text-list-item {
+.notice-list-item {
   font-size: 0.9rem;
   color: #1C5CCB;
   font-weight: 500;
   margin-left: 22px;
   position: relative; }
-  .text-list-item:before {
+  .notice-list-item:before {
     content: "※";
     display: block;
     color: #1C5CCB;
@@ -21461,9 +21482,7 @@ input[readonly] {
       padding: 0 20px !important;
       height: 38px;
       position: relative;
-      font-size: 0.9rem;
-      padding-top: 4px !important;
-      padding-bottom: 4px !important; } }
+      font-size: 0.9rem; } }
   @media (max-width: 1200px) {
     .main .innertable td:last-child {
       border-bottom: none; } }
@@ -21492,7 +21511,14 @@ input[readonly] {
       background: #58BEB4 !important;
       color: #fff !important; }
       .main .innertable td:first-child:before {
-        color: #fff; } }
+        color: #fff; }
+      .main .innertable td:first-child::after {
+        content: "-";
+        display: block;
+        margin-left: auto;
+        font-size: 1.75rem;
+        line-height: 0.5;
+        margin-top: -7px; } }
 
 .photo-upload {
   border-radius: 10px;
