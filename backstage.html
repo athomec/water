@@ -152,432 +152,8 @@
             <div class="side-container-body p-4">
                 <div class="tab-content">
                     <div class="tab-pane fade show active" id="manage1" role="tabpanel" tabindex="0">
-                        <h3 class="bg-secondary-pale w-100 py-2 fs-5 text-white text-center mb-0">會勘紀錄</h3>
                         <table class="table table-rwd table-main mb-3">
                             <tbody>
-                                <tr>
-                                    <th scope="row" width="170px">會勘日期</th>
-                                    <td data-th="會勘日期">
-                                        <div class="container w-100">
-                                            <div class="input-group date" id="consultation" data-target-input="nearest" style="max-width: 350px;">
-                                                <input type="text" class="form-control datetimepicker-input border-end-0 pe-0" data-target="#consultation">
-                                                <div class="input-group-append" data-target="#consultation" data-toggle="datetimepicker">
-                                                    <button class="btn input-group-text" title="點選點名日期" value="點選點名日期">
-                                                        <img src="./assets/images/ic-calendar.svg" alt="icon">
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">會勘地點</th>
-                                    <td data-th="會勘地點">
-                                        <div class="container w-100">
-                                            <div class="d-flex text-secondary-dark">
-                                                <img src="./assets/images/ic-arrow-secondary.svg" class="me-2" style="width: 12px;">
-                                                <p class="me-2">申請土地現場 TWD97座標</p>
-                                                <a href="#" class="link-img"><img src="./assets/images/ic-locate-circle.svg"></a>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-md-6">
-                                                    <div class="form-group w-100">
-                                                        <label for="x" class="col-form-label flex-shrink-0 me-3">座標X</label>
-                                                        <input type="text" class="form-control" id="x">
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <div class="form-group w-100">
-                                                        <label for="y" class="col-form-label flex-shrink-0 me-3">座標Y</label>
-                                                        <input type="text" class="form-control" id="y">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">參加人員</th>
-                                    <td data-th="參加人員">
-                                        <div class="container w-100">
-                                            <div class="row gy-4">
-                                                <div class="col-md-4">
-                                                    <p class="sign-text">紀錄</p>
-                                                    <div class="sign-box">
-                                                        <img src="./assets/images/ic-sign.svg" class="sign-box-img me-2">
-                                                        <p>點擊此處簽名</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-4">
-                                                    <p class="sign-text">紀錄</p>
-                                                    <div class="sign-box">
-                                                        <img src="./assets/images/ic-sign.svg" class="sign-box-img me-2">
-                                                        <p>點擊此處簽名</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-4">
-                                                    <p class="sign-text">紀錄</p>
-                                                    <div class="sign-box">
-                                                        <img src="./assets/images/ic-sign.svg" class="sign-box-img me-2">
-                                                        <p>點擊此處簽名</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-4">
-                                                    <p class="sign-text">紀錄</p>
-                                                    <div class="sign-box">
-                                                        <img src="./assets/images/ic-sign.svg" class="sign-box-img me-2">
-                                                        <p>點擊此處簽名</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-4">
-                                                    <p class="sign-text">紀錄</p>
-                                                    <div class="sign-box">
-                                                        <img src="./assets/images/ic-sign.svg" class="sign-box-img me-2">
-                                                        <p>點擊此處簽名</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-4">
-                                                    <p class="sign-text">紀錄</p>
-                                                    <div class="sign-box">
-                                                        <img src="./assets/images/ic-sign.svg" class="sign-box-img me-2">
-                                                        <p>點擊此處簽名</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">會勘現況及結論</th>
-                                    <td data-th="會勘現況及結論">
-                                        <div class="container w-100">
-                                            <div class="d-flex text-secondary-dark">
-                                                <img src="./assets/images/ic-arrow-secondary.svg" class="me-2" style="width: 12px;">
-                                                <p class="me-2">申請土地</p>
-                                            </div>
-                                            <div class="row gy-md-4 mb-3">
-                                                <div class="col-md-4">
-                                                    <div class="form-group w-100">
-                                                        <label for="land" class="col-form-label flex-shrink-0 me-3">用地</label>
-                                                        <select id="land" class="form-select me-3 w-100 mb-2 mb-md-0" title="用地" style="max-width: 580px;">
-                                                            <option selected="">請選擇</option>
-                                                            <option value="1">One</option>
-                                                            <option value="2">Two</option>
-                                                            <option value="3">Three</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-4">
-                                                    <div class="form-group w-100">
-                                                        <label for="destine" class="col-form-label flex-shrink-0 me-3">預定興建位置</label>
-                                                        <select id="destine" class="form-select me-3 w-100 mb-2 mb-md-0" title="預定興建位置" style="max-width: 580px;">
-                                                            <option selected="">請選擇</option>
-                                                            <option value="1">One</option>
-                                                            <option value="2">Two</option>
-                                                            <option value="3">Three</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-4">
-                                                    <div class="form-group w-100">
-                                                        <label for="plant" class="col-form-label flex-shrink-0 me-3">地表植生</label>
-                                                        <select id="plant" class="form-select me-3 w-100 mb-2 mb-md-0" title="地表植生" style="max-width: 580px;">
-                                                            <option selected="">請選擇</option>
-                                                            <option value="1">One</option>
-                                                            <option value="2">Two</option>
-                                                            <option value="3">Three</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                                <div class="col-12">
-                                                    <label class="col-form-label me-3 flex-shrink-0" style="width: 92px;">現況</label>
-                                                    <div class="form-group">
-                                                        <div class="form-check form-check-inline flex-shrink-0">
-                                                            <input class="form-check-input" type="radio" name="now" id="no-now" value="no" checked>
-                                                            <label class="form-check-label" for="no-now">無</label>
-                                                        </div>
-                                                        <div class="form-check form-check-inline flex-shrink-0">
-                                                            <input class="form-check-input" type="radio" name="now" id="yes-now" value="yes">
-                                                            <label class="form-check-label" for="yes-now">有<span class="ps-3">發現有近期開挖整地情形。</span></label>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-12">
-                                                    <ul class="text-list">
-                                                        <li class="text-list-item">
-                                                            本案開發規模、實施地點土地位置圖、水土保持設施平面配置圖、臨時防災設施配置圖、構造物示意圖、實施水土保持處理項目及數量明細表等內容，詳核定之簡易水土保持申報書。
-                                                        </li>
-                                                        <li class="text-list-item">本案尚未核定前請勿擅自施作，倘違反反水土保持法之相關規定，本府將依規查處。</li>
-                                                        <li class="text-list-item">本案水土保持申報書與申請人/代理人帶回修正。</li>
-                                                    </ul>
-                                                </div>
-                                                <div class="col-12">
-                                                    <label class="col-form-label me-3 flex-shrink-0" style="width: 92px;">相關單位意見</label>
-                                                    <div class="form-group mb-2">
-                                                        <div class="form-check form-check-inline flex-shrink-0">
-                                                            <input class="form-check-input" type="radio" name="opinion" id="no-opinion" value="no">
-                                                            <label class="form-check-label" for="no-opinion">無</label>
-                                                        </div>
-                                                        <div class="form-check form-check-inline flex-shrink-0">
-                                                            <input class="form-check-input" type="radio" name="opinion" id="yes-opinion" value="yes" checked>
-                                                            <label class="form-check-label" for="yes-opinion">有</label>
-                                                        </div>
-                                                    </div>
-                                                    <input type="text" class="form-control" id="x">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">會勘現場照片</th>
-                                    <td data-th="會勘現場照片">
-                                        <div class="container w-100">
-                                            <div class="row gy-3">
-                                                <div class="col-xxl-6">
-                                                    <div class="photo-upload">
-                                                        <div class="photo-upload-function">
-                                                            <p>1</p>
-                                                            <a href="#" class="photo-upload-btn link-img"><img src="./assets/images/ic-trash.svg"></a>
-                                                        </div>
-                                                        <div class="photo-upload-img">
-                                                            <img src="./assets/images/demo-pic.jpg" alt="照片" onclick="showbox_open();">
-                                                        </div>
-                                                        <!--照片大圖開始-->
-                                                        <div id="showpic">
-                                                            <a class="boxclose" id="boxclose" onclick="showbox_close();">
-                                                                <img src="./assets/images/ic-close.svg" alt="關閉">
-                                                            </a>
-                                                            <div class="showpic-img">
-                                                                <img src="./assets/images/demo-pic.jpg">
-                                                            </div>
-                                                        </div>
-                                                        <!--照片大圖結束-->
-                                                        <textarea class="form-control" rows="3" placeholder="請輸入照片說明"></textarea>
-                                                    </div>
-                                                </div>
-                                                <div class="col-xxl-6">
-                                                    <div class="photo-upload">
-                                                        <div class="photo-upload-function">
-                                                            <p>2</p>
-                                                            <a href="#" class="photo-upload-btn link-img"><img src="./assets/images/ic-trash.svg"></a>
-                                                        </div>
-                                                        <div class="photo-upload-img">
-                                                            <img src="./assets/images/demo-pic.jpg" alt="照片" onclick="showbox_open();">
-                                                        </div>
-                                                        <!--照片大圖開始-->
-                                                        <div id="showpic">
-                                                            <a class="boxclose" id="boxclose" onclick="showbox_close();">
-                                                                <img src="./assets/images/ic-close.svg" alt="關閉">
-                                                            </a>
-                                                            <div class="showpic-img">
-                                                                <img src="./assets/images/demo-pic.jpg">
-                                                            </div>
-                                                        </div>
-                                                        <!--照片大圖結束-->
-                                                        <textarea class="form-control" rows="3" placeholder="請輸入照片說明"></textarea>
-                                                    </div>
-                                                </div>
-                                                <div class="col-xxl-6">
-                                                    <div class="photo-upload">
-                                                        <div class="photo-upload-function">
-                                                            <p>3</p>
-                                                            <a href="#" class="photo-upload-btn link-img"><img src="./assets/images/ic-trash.svg"></a>
-                                                        </div>
-                                                        <div class="photo-upload-img">
-                                                            <img src="./assets/images/demo-pic.jpg" alt="照片" onclick="showbox_open();">
-                                                        </div>
-                                                        <!--照片大圖開始-->
-                                                        <div id="showpic">
-                                                            <a class="boxclose" id="boxclose" onclick="showbox_close();">
-                                                                <img src="./assets/images/ic-close.svg" alt="關閉">
-                                                            </a>
-                                                            <div class="showpic-img">
-                                                                <img src="./assets/images/demo-pic.jpg">
-                                                            </div>
-                                                        </div>
-                                                        <!--照片大圖結束-->
-                                                        <textarea class="form-control" rows="3" placeholder="請輸入照片說明"></textarea>
-                                                    </div>
-                                                </div>
-                                                <div class="col-xxl-6">
-                                                    <a href="#" class="photo-add">
-                                                        <img src="./assets/images/ic-photo.svg" class="me-4">
-                                                        點擊新增照片
-                                                    </a>
-                                                </div>
-                                                <div class="col-12">
-                                                    <ul class="text-list">
-                                                        <li class="text-list-item">
-                                                            上傳的照片上限六張；照片上傳時系統相自動壓縮。
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">審查核定</th>
-                                    <td data-th="審查核定">
-                                        <div class="container w-100">
-                                            <div class="d-flex text-secondary-dark">
-                                                <img src="./assets/images/ic-arrow-secondary.svg" class="me-2" style="width: 12px;">
-                                                <p class="me-2">審查期限</p>
-                                            </div>
-                                        <div class="row gy-3 mb-4">
-                                            <div class="col-md-4">
-                                                <div class="form-group">
-                                                    <label for="deadline" class="col-form-label flex-shrink-0 me-3">補正期限</label>
-                                                    <div class="input-group date w-100" id="deadline" data-target-input="nearest">
-                                                        <input type="text" class="form-control datetimepicker-input border-end-0 pe-0"
-                                                            data-target="#deadline">
-                                                        <div class="input-group-append" data-target="#deadline" data-toggle="datetimepicker">
-                                                            <button class="btn input-group-text" title="點選點名日期" value="點選點名日期">
-                                                                <img src="./assets/images/ic-calendar.svg" alt="icon">
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-8">
-                                                <div class="form-group w-100">
-                                                    <label for="return" class="col-form-label flex-shrink-0 me-3">退補件說明</label>
-                                                    <input type="text" class="form-control" id="return">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-4">
-                                                <div class="form-group">
-                                                    <label for="second-deadline" class="col-form-label flex-shrink-0 me-3">第二次補正期限</label>
-                                                    <div class="input-group date w-100" id="second-deadline" data-target-input="nearest">
-                                                        <input type="text" class="form-control datetimepicker-input border-end-0 pe-0"
-                                                            data-target="#second-deadline">
-                                                        <div class="input-group-append" data-target="#second-deadline"
-                                                            data-toggle="datetimepicker">
-                                                            <button class="btn input-group-text" title="點選點名日期" value="點選點名日期">
-                                                                <img src="./assets/images/ic-calendar.svg" alt="icon">
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-8">
-                                                <div class="form-group w-100">
-                                                    <label for="second-return" class="col-form-label flex-shrink-0 me-3">第二次退補件說明</label>
-                                                    <input type="text" class="form-control" id="second-return">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="d-flex text-secondary-dark">
-                                            <img src="./assets/images/ic-arrow-secondary.svg" class="me-2" style="width: 12px;">
-                                            <p class="me-2">審查人員</p>
-                                        </div>
-                                        <div class="row gy-3 mb-4">
-                                            <div class="col-md-6 col-xxl-4">
-                                                <div class="form-group">
-                                                    <label for="inspector" class="col-form-label flex-shrink-0 me-3">審核者</label>
-                                                    <input type="text" class="form-control" id="inspector" value="農業處管理員">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6 col-xxl-4">
-                                                <div class="form-group">
-                                                    <label for="inspector" class="col-form-label flex-shrink-0 me-3">審核角色</label>
-                                                    <input type="text" class="form-control" id="inspector" value="農業處">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6 col-xxl-4">
-                                                <div class="form-group">
-                                                    <label class="col-form-label flex-shrink-0 me-3">受理動作</label>
-                                                    <div class="form-group">
-                                                        <div class="form-check form-check-inline flex-shrink-0">
-                                                            <input class="form-check-input" type="radio" name="action" id="approved" value="no"
-                                                                checked>
-                                                            <label class="form-check-label" for="approved">核定</label>
-                                                        </div>
-                                                        <div class="form-check form-check-inline flex-shrink-0">
-                                                            <input class="form-check-input" type="radio" name="action" id="no-approved"
-                                                                value="yes">
-                                                            <label class="form-check-label" for="no-approved">不予核定</label>
-                                                        </div>
-                                                        <div class="form-check form-check-inline flex-shrink-0">
-                                                            <input class="form-check-input" type="radio" name="action" id="correction"
-                                                                value="yes">
-                                                            <label class="form-check-label" for="correction">退補正</label>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-12">
-                                                <div class="form-group">
-                                                    <label for="remark" class="col-form-label flex-shrink-0 me-3">備註</label>
-                                                    <input type="text" class="form-control" id="remark" value="農業處">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        
-                                            <div class="row gy-3">
-                                                <div class="col-md-6 col-xxl-4">
-                                                    <h5 class="file-btn title-function text-secondary-dark">
-                                                        <img src="./assets/images/ic-arrow-secondary.svg" class="me-2" style="width: 12px;">
-                                                        <p>審查核定公文上傳</p>
-                                                        <button class="btn btn-outline-special ms-auto fs-8">
-                                                            <img src="./assets/images/ic-trash-orange.svg" class="me-1">全部刪除
-                                                        </button>
-                                                    </h5>
-                                                    <button class="file-btn btn btn-bright-xxlight w-100 text-white fs-6 shadow-sm">
-                                                        <img src="./assets/images/ic-cloud-arrow-up.svg" class="me-2">上傳 PDF 檔案
-                                                    </button>
-                                                    <ul class="file-list scrollbar scrollbar-primary">
-                                                        <li class="file-list-item" data-check="ok">
-                                                            <p>核定公文</p><button class="btn"><img src="./assets/images/ic-cross.svg"></button>
-                                                        </li>
-                                                        <li class="file-list-item" data-check="ok">
-                                                            <p>核定公文</p><button class="btn"><img src="./assets/images/ic-cross.svg"></button>
-                                                        </li>
-                                                        <li class="file-list-item" data-check="ok">
-                                                            <p>核定公文</p><button class="btn"><img src="./assets/images/ic-cross.svg"></button>
-                                                        </li>
-                                                        <li class="file-list-item" data-check="ok">
-                                                            <p>核定公文</p><button class="btn"><img src="./assets/images/ic-cross.svg"></button>
-                                                        </li>
-                                                        <li class="file-list-item" data-check="ok">
-                                                            <p>核定公文</p><button class="btn"><img src="./assets/images/ic-cross.svg"></button>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                                <div class="col-md-6 col-xxl-4">
-                                                    <h5 class="file-btn title-function text-secondary-dark">
-                                                        <img src="./assets/images/ic-arrow-secondary.svg" class="me-2" style="width: 12px;">
-                                                        <p>代理人委託書上傳</p>
-                                                        <button class="btn btn-outline-special ms-auto fs-8">
-                                                            <img src="./assets/images/ic-trash-orange.svg" class="me-1">全部刪除
-                                                        </button>
-                                                    </h5>
-                                                    <button class="file-btn btn btn-bright-xxlight w-100 text-white fs-6 shadow-sm">
-                                                        <img src="./assets/images/ic-cloud-arrow-up.svg" class="me-2">上傳 PDF 檔案
-                                                    </button>
-                                                    <ul class="file-list scrollbar scrollbar-primary">
-                                                        <li class="file-list-item" data-check="ok">
-                                                            <p>代理人委託書</p><button class="btn"><img src="./assets/images/ic-cross.svg"></button>
-                                                        </li>
-                                                        <li class="file-list-item" data-check="ok">
-                                                            <p>代理人委託書</p><button class="btn"><img src="./assets/images/ic-cross.svg"></button>
-                                                        </li>
-                                                        <li class="file-list-item" data-check="ok">
-                                                            <p>代理人委託書</p><button class="btn"><img src="./assets/images/ic-cross.svg"></button>
-                                                        </li>
-                                                        <li class="file-list-item" data-check="ok">
-                                                            <p>代理人委託書</p><button class="btn"><img src="./assets/images/ic-cross.svg"></button>
-                                                        </li>
-                                                        <li class="file-list-item" data-check="ok">
-                                                            <p>代理人委託書</p><button class="btn"><img src="./assets/images/ic-cross.svg"></button>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </td>
-                                </tr>
                                 <tr>
                                     <th scope="row">土地資訊</th>
                                     <td data-th="土地資訊">
@@ -702,13 +278,458 @@
                         受理
                     </div>
                     <div class="tab-pane fade" id="manage4" role="tabpanel" tabindex="0">
-                        施工
+                        <h3 class="bg-secondary-pale w-100 py-2 fs-5 text-white text-center mb-0">會勘紀錄</h3>
+                        <table class="table table-rwd table-main mb-3">
+                            <tbody>
+                                <tr>
+                                    <th scope="row" width="170px">會勘日期</th>
+                                    <td data-th="會勘日期">
+                                        <div class="container w-100">
+                                            <div class="input-group date" id="consultation" data-target-input="nearest"
+                                                style="max-width: 350px;">
+                                                <input type="text" class="form-control datetimepicker-input border-end-0 pe-0"
+                                                    data-target="#consultation">
+                                                <div class="input-group-append" data-target="#consultation" data-toggle="datetimepicker">
+                                                    <button class="btn input-group-text" title="點選點名日期" value="點選點名日期">
+                                                        <img src="./assets/images/ic-calendar.svg" alt="icon">
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">會勘地點</th>
+                                    <td data-th="會勘地點">
+                                        <div class="container w-100">
+                                            <div class="d-flex text-secondary-dark">
+                                                <img src="./assets/images/ic-arrow-secondary.svg" class="me-2" style="width: 12px;">
+                                                <p class="me-2">申請土地現場 TWD97座標</p>
+                                                <a href="#" class="link-img"><img src="./assets/images/ic-locate-circle.svg"></a>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="form-group w-100">
+                                                        <label for="x" class="col-form-label flex-shrink-0 me-3">座標X</label>
+                                                        <input type="text" class="form-control" id="x">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group w-100">
+                                                        <label for="y" class="col-form-label flex-shrink-0 me-3">座標Y</label>
+                                                        <input type="text" class="form-control" id="y">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">參加人員</th>
+                                    <td data-th="參加人員">
+                                        <div class="container w-100">
+                                            <div class="row gy-4">
+                                                <div class="col-md-4">
+                                                    <p class="sign-text">紀錄</p>
+                                                    <div class="sign-box">
+                                                        <img src="./assets/images/ic-sign.svg" class="sign-box-img me-2">
+                                                        <p>點擊此處簽名</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <p class="sign-text">紀錄</p>
+                                                    <div class="sign-box">
+                                                        <img src="./assets/images/ic-sign.svg" class="sign-box-img me-2">
+                                                        <p>點擊此處簽名</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <p class="sign-text">紀錄</p>
+                                                    <div class="sign-box">
+                                                        <img src="./assets/images/ic-sign.svg" class="sign-box-img me-2">
+                                                        <p>點擊此處簽名</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <p class="sign-text">紀錄</p>
+                                                    <div class="sign-box">
+                                                        <img src="./assets/images/ic-sign.svg" class="sign-box-img me-2">
+                                                        <p>點擊此處簽名</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <p class="sign-text">紀錄</p>
+                                                    <div class="sign-box">
+                                                        <img src="./assets/images/ic-sign.svg" class="sign-box-img me-2">
+                                                        <p>點擊此處簽名</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <p class="sign-text">紀錄</p>
+                                                    <div class="sign-box">
+                                                        <img src="./assets/images/ic-sign.svg" class="sign-box-img me-2">
+                                                        <p>點擊此處簽名</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">會勘現況及結論</th>
+                                    <td data-th="會勘現況及結論">
+                                        <div class="container w-100">
+                                            <div class="d-flex text-secondary-dark">
+                                                <img src="./assets/images/ic-arrow-secondary.svg" class="me-2" style="width: 12px;">
+                                                <p class="me-2">申請土地</p>
+                                            </div>
+                                            <div class="row gy-md-4 mb-3">
+                                                <div class="col-md-4">
+                                                    <div class="form-group w-100">
+                                                        <label for="land" class="col-form-label flex-shrink-0 me-3">用地</label>
+                                                        <select id="land" class="form-select me-3 w-100 mb-2 mb-md-0" title="用地"
+                                                            style="max-width: 580px;">
+                                                            <option selected="">請選擇</option>
+                                                            <option value="1">One</option>
+                                                            <option value="2">Two</option>
+                                                            <option value="3">Three</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="form-group w-100">
+                                                        <label for="destine" class="col-form-label flex-shrink-0 me-3">預定興建位置</label>
+                                                        <select id="destine" class="form-select me-3 w-100 mb-2 mb-md-0" title="預定興建位置"
+                                                            style="max-width: 580px;">
+                                                            <option selected="">請選擇</option>
+                                                            <option value="1">One</option>
+                                                            <option value="2">Two</option>
+                                                            <option value="3">Three</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="form-group w-100">
+                                                        <label for="plant" class="col-form-label flex-shrink-0 me-3">地表植生</label>
+                                                        <select id="plant" class="form-select me-3 w-100 mb-2 mb-md-0" title="地表植生"
+                                                            style="max-width: 580px;">
+                                                            <option selected="">請選擇</option>
+                                                            <option value="1">One</option>
+                                                            <option value="2">Two</option>
+                                                            <option value="3">Three</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <label class="col-form-label me-3 flex-shrink-0" style="width: 92px;">現況</label>
+                                                    <div class="form-group">
+                                                        <div class="form-check form-check-inline flex-shrink-0">
+                                                            <input class="form-check-input" type="radio" name="now" id="no-now" value="no"
+                                                                checked>
+                                                            <label class="form-check-label" for="no-now">無</label>
+                                                        </div>
+                                                        <div class="form-check form-check-inline flex-shrink-0">
+                                                            <input class="form-check-input" type="radio" name="now" id="yes-now" value="yes">
+                                                            <label class="form-check-label" for="yes-now">有<span
+                                                                    class="ps-3">發現有近期開挖整地情形。</span></label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <ul class="text-list">
+                                                        <li class="text-list-item">
+                                                            本案開發規模、實施地點土地位置圖、水土保持設施平面配置圖、臨時防災設施配置圖、構造物示意圖、實施水土保持處理項目及數量明細表等內容，詳核定之簡易水土保持申報書。
+                                                        </li>
+                                                        <li class="text-list-item">本案尚未核定前請勿擅自施作，倘違反反水土保持法之相關規定，本府將依規查處。</li>
+                                                        <li class="text-list-item">本案水土保持申報書與申請人/代理人帶回修正。</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-12">
+                                                    <label class="col-form-label me-3 flex-shrink-0" style="width: 92px;">相關單位意見</label>
+                                                    <div class="form-group mb-2">
+                                                        <div class="form-check form-check-inline flex-shrink-0">
+                                                            <input class="form-check-input" type="radio" name="opinion" id="no-opinion"
+                                                                value="no">
+                                                            <label class="form-check-label" for="no-opinion">無</label>
+                                                        </div>
+                                                        <div class="form-check form-check-inline flex-shrink-0">
+                                                            <input class="form-check-input" type="radio" name="opinion" id="yes-opinion"
+                                                                value="yes" checked>
+                                                            <label class="form-check-label" for="yes-opinion">有</label>
+                                                        </div>
+                                                    </div>
+                                                    <input type="text" class="form-control" id="x">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">會勘現場照片</th>
+                                    <td data-th="會勘現場照片">
+                                        <div class="container w-100">
+                                            <div class="row gy-3">
+                                                <div class="col-xxl-6">
+                                                    <div class="photo-upload">
+                                                        <div class="photo-upload-function">
+                                                            <p>1</p>
+                                                            <a href="#" class="photo-upload-btn link-img"><img
+                                                                    src="./assets/images/ic-trash.svg"></a>
+                                                        </div>
+                                                        <div class="photo-upload-img">
+                                                            <img src="./assets/images/demo-pic.jpg" alt="照片" onclick="showbox_open();">
+                                                        </div>
+                                                        <!--照片大圖開始-->
+                                                        <div id="showpic">
+                                                            <a class="boxclose" id="boxclose" onclick="showbox_close();">
+                                                                <img src="./assets/images/ic-close.svg" alt="關閉">
+                                                            </a>
+                                                            <div class="showpic-img">
+                                                                <img src="./assets/images/demo-pic.jpg">
+                                                            </div>
+                                                        </div>
+                                                        <!--照片大圖結束-->
+                                                        <textarea class="form-control" rows="3" placeholder="請輸入照片說明"></textarea>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xxl-6">
+                                                    <div class="photo-upload">
+                                                        <div class="photo-upload-function">
+                                                            <p>2</p>
+                                                            <a href="#" class="photo-upload-btn link-img"><img
+                                                                    src="./assets/images/ic-trash.svg"></a>
+                                                        </div>
+                                                        <div class="photo-upload-img">
+                                                            <img src="./assets/images/demo-pic.jpg" alt="照片" onclick="showbox_open();">
+                                                        </div>
+                                                        <!--照片大圖開始-->
+                                                        <div id="showpic">
+                                                            <a class="boxclose" id="boxclose" onclick="showbox_close();">
+                                                                <img src="./assets/images/ic-close.svg" alt="關閉">
+                                                            </a>
+                                                            <div class="showpic-img">
+                                                                <img src="./assets/images/demo-pic.jpg">
+                                                            </div>
+                                                        </div>
+                                                        <!--照片大圖結束-->
+                                                        <textarea class="form-control" rows="3" placeholder="請輸入照片說明"></textarea>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xxl-6">
+                                                    <div class="photo-upload">
+                                                        <div class="photo-upload-function">
+                                                            <p>3</p>
+                                                            <a href="#" class="photo-upload-btn link-img"><img
+                                                                    src="./assets/images/ic-trash.svg"></a>
+                                                        </div>
+                                                        <div class="photo-upload-img">
+                                                            <img src="./assets/images/demo-pic.jpg" alt="照片" onclick="showbox_open();">
+                                                        </div>
+                                                        <!--照片大圖開始-->
+                                                        <div id="showpic">
+                                                            <a class="boxclose" id="boxclose" onclick="showbox_close();">
+                                                                <img src="./assets/images/ic-close.svg" alt="關閉">
+                                                            </a>
+                                                            <div class="showpic-img">
+                                                                <img src="./assets/images/demo-pic.jpg">
+                                                            </div>
+                                                        </div>
+                                                        <!--照片大圖結束-->
+                                                        <textarea class="form-control" rows="3" placeholder="請輸入照片說明"></textarea>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xxl-6">
+                                                    <a href="#" class="photo-add">
+                                                        <img src="./assets/images/ic-photo.svg" class="me-4">
+                                                        點擊新增照片
+                                                    </a>
+                                                </div>
+                                                <div class="col-12">
+                                                    <ul class="text-list">
+                                                        <li class="text-list-item">
+                                                            上傳的照片上限六張；照片上傳時系統相自動壓縮。
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">審查核定</th>
+                                    <td data-th="審查核定">
+                                        <div class="container w-100">
+                                            <div class="d-flex text-secondary-dark">
+                                                <img src="./assets/images/ic-arrow-secondary.svg" class="me-2" style="width: 12px;">
+                                                <p class="me-2">審查期限</p>
+                                            </div>
+                                            <div class="row gy-3 mb-4">
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label for="deadline" class="col-form-label flex-shrink-0 me-3">補正期限</label>
+                                                        <div class="input-group date w-100" id="deadline" data-target-input="nearest">
+                                                            <input type="text" class="form-control datetimepicker-input border-end-0 pe-0"
+                                                                data-target="#deadline">
+                                                            <div class="input-group-append" data-target="#deadline"
+                                                                data-toggle="datetimepicker">
+                                                                <button class="btn input-group-text" title="點選點名日期" value="點選點名日期">
+                                                                    <img src="./assets/images/ic-calendar.svg" alt="icon">
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <div class="form-group w-100">
+                                                        <label for="return" class="col-form-label flex-shrink-0 me-3">退補件說明</label>
+                                                        <input type="text" class="form-control" id="return">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label for="second-deadline" class="col-form-label flex-shrink-0 me-3">第二次補正期限</label>
+                                                        <div class="input-group date w-100" id="second-deadline" data-target-input="nearest">
+                                                            <input type="text" class="form-control datetimepicker-input border-end-0 pe-0"
+                                                                data-target="#second-deadline">
+                                                            <div class="input-group-append" data-target="#second-deadline"
+                                                                data-toggle="datetimepicker">
+                                                                <button class="btn input-group-text" title="點選點名日期" value="點選點名日期">
+                                                                    <img src="./assets/images/ic-calendar.svg" alt="icon">
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <div class="form-group w-100">
+                                                        <label for="second-return" class="col-form-label flex-shrink-0 me-3">第二次退補件說明</label>
+                                                        <input type="text" class="form-control" id="second-return">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex text-secondary-dark">
+                                                <img src="./assets/images/ic-arrow-secondary.svg" class="me-2" style="width: 12px;">
+                                                <p class="me-2">審查人員</p>
+                                            </div>
+                                            <div class="row gy-3 mb-4">
+                                                <div class="col-md-6 col-xxl-4">
+                                                    <div class="form-group">
+                                                        <label for="inspector" class="col-form-label flex-shrink-0 me-3">審核者</label>
+                                                        <input type="text" class="form-control" id="inspector" value="農業處管理員">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 col-xxl-4">
+                                                    <div class="form-group">
+                                                        <label for="inspector" class="col-form-label flex-shrink-0 me-3">審核角色</label>
+                                                        <input type="text" class="form-control" id="inspector" value="農業處">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 col-xxl-4">
+                                                    <div class="form-group">
+                                                        <label class="col-form-label flex-shrink-0 me-3">受理動作</label>
+                                                        <div class="form-group">
+                                                            <div class="form-check form-check-inline flex-shrink-0">
+                                                                <input class="form-check-input" type="radio" name="action" id="approved"
+                                                                    value="no" checked>
+                                                                <label class="form-check-label" for="approved">核定</label>
+                                                            </div>
+                                                            <div class="form-check form-check-inline flex-shrink-0">
+                                                                <input class="form-check-input" type="radio" name="action" id="no-approved"
+                                                                    value="yes">
+                                                                <label class="form-check-label" for="no-approved">不予核定</label>
+                                                            </div>
+                                                            <div class="form-check form-check-inline flex-shrink-0">
+                                                                <input class="form-check-input" type="radio" name="action" id="correction"
+                                                                    value="yes">
+                                                                <label class="form-check-label" for="correction">退補正</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="form-group">
+                                                        <label for="remark" class="col-form-label flex-shrink-0 me-3">備註</label>
+                                                        <input type="text" class="form-control" id="remark" value="農業處">
+                                                    </div>
+                                                </div>
+                                            </div>
+                        
+                                            <div class="row gy-3">
+                                                <div class="col-md-6 col-xxl-4">
+                                                    <h5 class="file-btn title-function text-secondary-dark">
+                                                        <img src="./assets/images/ic-arrow-secondary.svg" class="me-2" style="width: 12px;">
+                                                        <p>審查核定公文上傳</p>
+                                                        <button class="btn btn-outline-special ms-auto fs-8">
+                                                            <img src="./assets/images/ic-trash-orange.svg" class="me-1">全部刪除
+                                                        </button>
+                                                    </h5>
+                                                    <button class="file-btn btn btn-bright-xxlight w-100 text-white fs-6 shadow-sm">
+                                                        <img src="./assets/images/ic-cloud-arrow-up.svg" class="me-2">上傳 PDF 檔案
+                                                    </button>
+                                                    <ul class="file-list scrollbar scrollbar-primary">
+                                                        <li class="file-list-item" data-check="ok">
+                                                            <p>核定公文</p><button class="btn"><img src="./assets/images/ic-cross.svg"></button>
+                                                        </li>
+                                                        <li class="file-list-item" data-check="ok">
+                                                            <p>核定公文</p><button class="btn"><img src="./assets/images/ic-cross.svg"></button>
+                                                        </li>
+                                                        <li class="file-list-item" data-check="ok">
+                                                            <p>核定公文</p><button class="btn"><img src="./assets/images/ic-cross.svg"></button>
+                                                        </li>
+                                                        <li class="file-list-item" data-check="ok">
+                                                            <p>核定公文</p><button class="btn"><img src="./assets/images/ic-cross.svg"></button>
+                                                        </li>
+                                                        <li class="file-list-item" data-check="ok">
+                                                            <p>核定公文</p><button class="btn"><img src="./assets/images/ic-cross.svg"></button>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-md-6 col-xxl-4">
+                                                    <h5 class="file-btn title-function text-secondary-dark">
+                                                        <img src="./assets/images/ic-arrow-secondary.svg" class="me-2" style="width: 12px;">
+                                                        <p>代理人委託書上傳</p>
+                                                        <button class="btn btn-outline-special ms-auto fs-8">
+                                                            <img src="./assets/images/ic-trash-orange.svg" class="me-1">全部刪除
+                                                        </button>
+                                                    </h5>
+                                                    <button class="file-btn btn btn-bright-xxlight w-100 text-white fs-6 shadow-sm">
+                                                        <img src="./assets/images/ic-cloud-arrow-up.svg" class="me-2">上傳 PDF 檔案
+                                                    </button>
+                                                    <ul class="file-list scrollbar scrollbar-primary">
+                                                        <li class="file-list-item" data-check="ok">
+                                                            <p>代理人委託書</p><button class="btn"><img src="./assets/images/ic-cross.svg"></button>
+                                                        </li>
+                                                        <li class="file-list-item" data-check="ok">
+                                                            <p>代理人委託書</p><button class="btn"><img src="./assets/images/ic-cross.svg"></button>
+                                                        </li>
+                                                        <li class="file-list-item" data-check="ok">
+                                                            <p>代理人委託書</p><button class="btn"><img src="./assets/images/ic-cross.svg"></button>
+                                                        </li>
+                                                        <li class="file-list-item" data-check="ok">
+                                                            <p>代理人委託書</p><button class="btn"><img src="./assets/images/ic-cross.svg"></button>
+                                                        </li>
+                                                        <li class="file-list-item" data-check="ok">
+                                                            <p>代理人委託書</p><button class="btn"><img src="./assets/images/ic-cross.svg"></button>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="row justify-content-center gx-3">
+                            <div class="col-6 col-sm-4 col-md-3 col-xl-2">
+                                <button class="btn btn-secondary-dark rounded-3 text-white w-100" title="儲存更新">儲存更新</button>
+                            </div>
+                        </div>
                     </div>
                     <div class="tab-pane fade" id="manage5" role="tabpanel" tabindex="0">
-                        完工
+                        施工
                     </div>
                     <div class="tab-pane fade" id="manage6" role="tabpanel" tabindex="0">
-                        審查
+                        完工
                     </div>
                 </div>
                 <div style="overflow:hidden;">
