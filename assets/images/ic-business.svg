@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <g id="ic-business" transform="translate(-874 -1530)">
+    <g id="briefcase-fill_1_" data-name="briefcase-fill (1)" transform="translate(876 1533)">
+      <path id="Path_557" data-name="Path 557" d="M6.5,1A1.5,1.5,0,0,0,5,2.5V3H1.5A1.5,1.5,0,0,0,0,4.5V5.884l7.614,2.03a1.5,1.5,0,0,0,.772,0L16,5.884V4.5A1.5,1.5,0,0,0,14.5,3H11V2.5A1.5,1.5,0,0,0,9.5,1Zm0,1h3a.5.5,0,0,1,.5.5V3H6V2.5A.5.5,0,0,1,6.5,2Z"/>
+      <path id="Path_558" data-name="Path 558" d="M0,12.5A1.5,1.5,0,0,0,1.5,14h13A1.5,1.5,0,0,0,16,12.5V6.85l-7.871,2.1a.5.5,0,0,1-.258,0L0,6.85Z"/>
+    </g>
+    <rect id="Rectangle_586" data-name="Rectangle 586" width="20" height="20" transform="translate(874 1530)" fill="none"/>
+  </g>
+</svg>

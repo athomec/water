@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+  <g id="ic-apply-done-white" transform="translate(-0.168 -0.168)">
+    <g id="Group_699" data-name="Group 699" transform="translate(0.168 0.168)">
+      <rect id="Rectangle_626" data-name="Rectangle 626" width="30" height="30" transform="translate(0 0)" fill="none"/>
+    </g>
+    <g id="Group_701" data-name="Group 701" transform="translate(3.824 1.303)">
+      <g id="Group_700" data-name="Group 700">
+        <path id="Path_2505" data-name="Path 2505" d="M5.521,6.042H8.042V9.824H20.647V6.042h2.521v6.3h2.521v-6.3a2.528,2.528,0,0,0-2.521-2.521H17.9a3.767,3.767,0,0,0-7.109,0H5.521A2.528,2.528,0,0,0,3,6.042V23.689A2.528,2.528,0,0,0,5.521,26.21h7.563V23.689H5.521Zm8.824-2.521a1.261,1.261,0,1,1-1.261,1.261A1.264,1.264,0,0,1,14.345,3.521Z" transform="translate(-3 -1)" fill="#fff"/>
+        <path id="Path_2506" data-name="Path 2506" d="M23.605,11.5l-6.92,6.933-3.794-3.782L11,16.542l5.685,5.672L25.5,13.391Z" transform="translate(-0.916 1.735)" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+</svg>

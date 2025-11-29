@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <g id="ic-voice" transform="translate(-883 -375)">
+    <rect id="ic-voice-2" data-name="ic-voice" width="20" height="20" rx="5" transform="translate(883 375)" fill="#58beb4"/>
+    <g id="volume_up_black_24dp" transform="translate(884.837 376.548)">
+      <path id="Path_95" data-name="Path 95" d="M0,0H16.529V16.529H0Z" fill="none"/>
+      <path id="Path_96" data-name="Path 96" d="M3,7.51v4.451H5.982L9.709,15.67V3.8L5.982,7.51ZM13.063,9.735A3.337,3.337,0,0,0,11.2,6.746v5.971A3.317,3.317,0,0,0,13.063,9.735ZM11.2,3.23V4.758a5.187,5.187,0,0,1,0,9.955v1.528a6.664,6.664,0,0,0,0-13.011Z" transform="translate(-1.444 -1.471)" fill="#fff"/>
+    </g>
+  </g>
+</svg>
