@@ -18233,6 +18233,11 @@ header[data-con="hill"] {
     background: #A6E1F3; }
     header[data-con="hill"] .navbar-main .nav-item:nth-last-child(3)::after {
       display: block; }
+    header[data-con="hill"] .navbar-main .nav-link {
+      padding: 12px 80px !important; }
+      @media (max-width: 1200px) {
+        header[data-con="hill"] .navbar-main .nav-link {
+          padding: 12px 40px !important; } }
   header[data-con="hill"] .navbar-collapse {
     top: 0;
     background: none; }
