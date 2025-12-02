@@ -18254,7 +18254,10 @@ input[readonly] {
     right: 16px;
     top: 16px;
     background: url("../images/ic-modal-close.svg");
-    background-size: cover; }
+    background-size: cover;
+    text-indent: -9999px;
+    overflow: hidden;
+    white-space: nowrap; }
   .login-vision {
     display: -webkit-box;
     display: -ms-flexbox;
