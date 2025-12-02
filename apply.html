@@ -262,13 +262,13 @@
             <div class="bg-secondary-xxlight rounded-4 p-3 p-lg-4 mb-3 collapse show" id="agent">
                 <div class="row g-3 align-items-center">
                     <div class="col-lg-8 d-flex align-items-md-center flex-column flex-md-row">
-                        <label class="col-form-label me-3 flex-shrink-0 text-md-end" style="width: 105px;">授權書<span
+                        <label class="col-form-label me-3 flex-shrink-0 text-md-end" style="width: 105px;" for="poa">授權書<span
                                 class="text-special">*</span></label>
                         <input type="file" class="form-control" id="fileInput" style="display:none"
-                            onchange="displayFileName()">
+                            onchange="displayFileName()" id="poa">
                         <button class="btn btn-special-light d-flex align-items-center text-white w-100" id="fileButton"
                             onclick="chooseFile()">
-                            <img src="./assets/images/ic-upload-cloud.svg" class="me-2">上傳PDF檔案
+                            <img src="./assets/images/ic-upload-cloud.svg" class="me-2" alt="icon">上傳PDF檔案
                         </button>
                         <script>
                             function chooseFile() {
