@@ -18224,15 +18224,22 @@ input[readonly] {
     .main {
       background-size: 500px, 690px, 250%; } }
   .main[data-con="hill"] {
-    background: url("../images/bg-bottom-up.svg") no-repeat center bottom, url("../images/bg-bottom.svg") no-repeat center bottom; }
-    @media (max-width: 1200px) {
-      .main[data-con="hill"] {
-        margin-top: 49px;
-        background-size: 100%, 100%;
-        padding-bottom: 100px; } }
-    @media (max-width: 576px) {
-      .main[data-con="hill"] {
-        padding-bottom: 70px; } }
+    background: url("../images/bg-bottom-up.svg") no-repeat center bottom, url("../images/bg-bottom.svg") no-repeat center bottom;
+    margin-top: 0; }
+
+header[data-con="hill"] {
+  height: 54px; }
+  header[data-con="hill"] .navbar {
+    background: #A6E1F3; }
+    header[data-con="hill"] .navbar-main .nav-item:nth-last-child(3)::after {
+      display: block; }
+  header[data-con="hill"] .navbar-collapse {
+    top: 0;
+    background: none; }
+    @media (max-width: 991px) {
+      header[data-con="hill"] .navbar-collapse {
+        top: 54px;
+        background: #fff; } }
 
 /*--------------------登入視窗開始------------------*/
 .login {
@@ -18436,6 +18443,8 @@ input[readonly] {
                 box-shadow: 0 4px 3px #adb5bd;
         left: 0;
         width: 100%; } }
+    .navbar-collapse[data-con="hill"] {
+      top: 0; }
   .navbar-main {
     /*主選單*/
     width: 100%; }
@@ -19315,7 +19324,10 @@ input[readonly] {
     margin-left: 8px;
     border-radius: 50%;
     background: #58BEB4;
-    border: 2px solid #fff; }
+    border: 2px solid #fff;
+    text-indent: -9999px;
+    overflow: hidden;
+    white-space: nowrap; }
   .carousel-indicators .active {
     background: #135E5C; }
 

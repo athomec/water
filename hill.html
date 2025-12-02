@@ -28,45 +28,24 @@
 		<!--頁面開始-->
 		<div class="wrapper">
 			<!--主選單開始-->
-<header>
-    <nav class="navbar navbar-expand-lg fixed-top flex-wrap py-0" data-con="">
+<header data-con="hill">
+    <nav class="navbar navbar-expand-lg fixed-top py-0">
         <div class="container">
-            <a href="#Accesskey_U" class="key d-none" id="Accesskey_U" accesskey="U" title="上方選單連結區，此區塊列有本網站的主要連結">:::</a>
-            <a class="navbar-brand" href="index.html" title="水土保持計畫協作平台">
-                <img src="./assets/images/logo.svg" class="me-2" alt="山坡地資訊查詢平台logo" />
+            <a href="#Accesskey_U" class="key d-none" id="Accesskey_U" accesskey="U"
+                title="上方選單連結區，此區塊列有本網站的主要連結">:::</a>
+            <a class="navbar-brand" href="index.html" title="山坡地管理資訊系統">
+                <img src="./assets/images/logo.svg" class="me-2" alt="logo" />
                 <h1 class="mb-0">
                     新竹縣政府農業處
                 </h1>
             </a>
-            <ul class="navbar-nav flex-row ms-auto me-3 me-lg-0 ">
-                <li class="nav-item d-none d-lg-block">
-                    <a class="nav-link d-none d-lg-block" href="index.html" title="案件查詢">回首頁</a>
-                </li>
-                <li class="nav-item ">
-                    <a class="nav-link d-none d-lg-block" href="sitemap.html" title="網站導覽">網站導覽</a>
-                </li>
-                <li class="nav-item me-2 ">
-                    <a class="btn btn-sm btn-secondary text-white" href="#" title="註冊">註冊</a>
-                </li>
-                <li class="nav-item ">
-                    <a class="btn btn-sm btn-primary text-white" href="#login" title="登入" data-bs-toggle="modal">登入</a>
-                </li>
-                <li class="nav-item me-3 d-none">
-                    <p class="text-primary fw-medium" id="hello">您好，Hsda13578</p>
-                </li>
-                <li class="nav-item d-none">
-                    <a class="btn btn-sm btn-primary text-white" href="#login" title="登入">登出</a>
-                </li>
-            </ul>
-            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarCollapse" title="展開選單">
+            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                title="展開選單">
                 展開選單
             </button>
-        </div>
-        <div class="collapse navbar-collapse w-100" id="navbarCollapse" data-style="">
-            <div class="navbar-main">
-                <div class="container">
-                    <ul class="navbar-nav ">
+            <div class="collapse navbar-collapse w-100" id="navbarCollapse">
+                <div class="navbar-main container">
+                    <ul class="navbar-nav">
                         <li class="nav-item ms-auto">
                             <a class="nav-link" href="#" title="案件委託審查/檢查">案件委託審查/檢查</a>
                         </li>
@@ -76,28 +55,10 @@
                         <li class="nav-item">
                             <a class="nav-link" href="search.html" title="山坡地資訊查詢">山坡地資訊查詢</a>
                         </li>
-                        <li class="nav-item d-lg-none">
-                            <a class="nav-link" href="sitemap.html" title="網站導覽">網站導覽</a>
-                        </li>
-                        <li class="nav-item d-lg-none">
-                            <a class="nav-link" href="index.html" title="回首頁">回首頁</a>
-                        </li>
-                    </ul>
-                    <ul class="navbar-nav d-none">
-                        <li class="nav-item ms-lg-auto">
-                            <a class="nav-link" href="sitemap.html" title="網頁導覽">網頁導覽</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#" title="坡地資訊">坡地資訊</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#" title="水保計畫">水保計畫</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="calc.html" title="規費試算">規費試算</a>
-                        </li>
                     </ul>
                 </div>
+            
+            
             </div>
         </div>
     </nav>
@@ -105,79 +66,7 @@
 <!--主選單結束-->
 				<a href="#Accesskey_C" class="key position-absolute" id="Accesskey_C" accesskey="C"
 					title="網頁主要內容資料區">:::</a>					
-				<!-- 登入視窗開始 -->
-<div class="modal modal-lg fade" id="login" tabindex="-1">
-    <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content overflow-hidden">
-            <div class="modal-body p-0">
-                <div class="login">
-                    <button type="button" class="login-close btn-close" data-bs-dismiss="modal" title="關閉視窗">關閉視窗</button>
-                    <div class="login-vision bg-gradient-color">
-                        <img src="./assets/images/login-vision.svg" alt="新竹縣政府農業處">
-                    </div>
-                    <div class="login-form">
-                        <form autocomplete="off" class="w-100">
-                            <div class="d-flex flex-column">
-                                <h1 class="login-title mb-2">登入</h1>
-                                <label class="form-label" for="account">帳號<span>－ACCOUNT</span></label>
-                                <input type="text" class="form-control form-control-lg mb-3 mb-md-4" id="account"
-                                    placeholder="請輸入帳號" data-con="account">
-                                <label class="form-label" for="password">密碼<span>－PASSWORD</span></label>
-                                <input type="text" class="form-control form-control-lg mb-2" id="password"
-                                    placeholder="請輸入密碼" data-con="password">
-                                <a href="#" class="login-link link-primary-xdark ms-auto mb-2">
-                                    <img src="./assets/images/ic-help.svg" alt="icon" class="me-1">忘記密碼</a>
-                                <div class="login-verify mb-2 js-verify-con">
-                                    <label for="verification" class="form-label secondary-color flex-shrink-0 mb-1">
-                                        驗證碼<span>－CAPTCHA</span>
-                                    </label>
-                                    <div class="d-flex align-items-stretch flex-column flex-md-row">
-                                        <input type="text" class="form-control form-control-lg me-3 mb-1 mb-2 mb-md-0"
-                                            id="verification" placeholder="請輸入驗證碼" data-con="pin">
-                                        <div class="login-verify-img d-flex flex-shrink-0 ms-auto">
-                                            <img src="./assets/images/demo-code.png" alt="驗證碼" style="height: 42px;">
-                                            <ul class="login-function ms-2 flex-shrink-0">
-                                                <li class="login-function-item mb-1">
-                                                    <a href="#" title="重整" class="login-function-link link-img">
-                                                        <img src="./assets/images/ic-reset.svg" alt="重整icon">
-                                                    </a>
-                                                </li>
-                                                <li class="login-function-item">
-                                                    <a href="#" title="語音" class="login-function-link link-img">
-                                                        <img src="./assets/images/ic-voice.svg" alt="語音icon">
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="login-verify mb-2 d-none js-otp-con">
-                                    <label for="OTP" class="form-label secondary-color flex-shrink-0 mb-1">
-                                        驗證碼<span>－CAPTCHA</span>
-                                    </label>
-                                    <input type="text" class="form-control form-control-lg me-3 mb-1 mb-2 mb-md-0"
-                                        id="OTP" placeholder="請輸入OTP驗證碼" data-con="pin">
-                                </div>
-
-                                <a href="#" class="login-link link-bright-dark mb-4 js-otp">
-                                    <img src="./assets/images/ic-arrow-right-blue.svg" alt="icon" class="me-2">使用OTP驗證
-                                </a>
-                                <a href="#" class="login-link link-bright-dark mb-4 d-none js-verify">
-                                    <img src="./assets/images/ic-arrow-right-blue.svg" alt="icon" class="me-2">使用圖像驗證
-                                </a>
-                                <div class="d-grid">
-                                    <button type="button" class="login-btn btn btn-primary rounded-pill text-white"
-                                        data-bs-dismiss="modal">登入</button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!--內容區塊開始-->
+				<!--內容區塊開始-->
 <main class="main bg-secondary-xxlight" data-con="hill">
     <!--banner 開始-->
     <div id="carouselExampleCaptions" class="carousel slide">
